@@ -3,41 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <title>My Portfolio</title>
     <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"> <!-- Google Fonts -->
 </head>
 <body>
 
-<div class="container">
-    <div class="about-me">
-        <img src="IMG_5134.heic" alt="Your Picture" class="profile-img">
-        <h1>🌟 About Me</h1>
-        <p>Welcome to my portfolio! I am <strong>Arif Hossen</strong>, a passionate <strong>[Your Profession/Field]</strong> with expertise in <strong>[Your Interests or Specializations]</strong>. I thrive on creativity and innovation, constantly seeking new challenges and opportunities to grow. My journey has led me to work on various exciting projects, and I am eager to share them with you.</p>
+<header>
+    <div class="container">
+        <h1>🌟 Arif Hossen</h1>
+        <p>A passionate <strong>[Your Profession/Field]</strong> with expertise in <strong>[Your Interests or Specializations]</strong>.</p>
+        <a href="#projects" class="btn">View My Work</a>
     </div>
+</header>
 
-    <hr>
+<div class="container">
+    <section class="about-me">
+        <img src="IMG_5134.heic" alt="Your Picture" class="profile-img">
+        <h2>About Me</h2>
+        <p>Welcome to my portfolio! I thrive on creativity and innovation, constantly seeking new challenges and opportunities to grow. My journey has led me to work on various exciting projects, and I am eager to share them with you.</p>
+    </section>
 
-    <div class="education">
+    <section class="education">
         <h2>🧑‍🎓 Education</h2>
         <ul>
             <li><strong>[Degree]</strong> in [Field of Study] - [University Name], [Year of Graduation]</li>
             <li><strong>[Additional Certifications or Courses]</strong> - [Institution Name], [Year]</li>
         </ul>
-    </div>
+    </section>
 
-    <hr>
-
-    <div class="news">
+    <section class="news">
         <h2>📰 News</h2>
         <ul>
             <li><strong>✨ Recent Achievement:</strong> Brief description of the achievement or news item.</li>
             <li><strong>📅 Upcoming Event:</strong> Details about any upcoming events, publications, or talks.</li>
         </ul>
-    </div>
+    </section>
 
-    <hr>
-
-    <div class="projects">
+    <section id="projects" class="projects">
         <h2>💻 Projects</h2>
         
         <div class="project">
@@ -64,22 +67,20 @@
 
         <!-- Add more projects as needed -->
         
-    </div>
+    </section>
 
-    <hr>
-
-    <div class="contact">
+    <section class="contact">
         <h2>📫 Contact</h2>
         <p>If you have any questions or collaboration ideas, feel free to reach out!</p>
         <p>Email: [your.email@example.com]</p>
         <p>LinkedIn: [Your LinkedIn Profile URL]</p>
-    </div>
-
-    <footer>
-        <p>Thank you for visiting my portfolio!</p>
-    </footer>
+    </section>
 
 </div>
+
+<footer>
+    <p>&copy; 2024 Arif Hossen. All Rights Reserved.</p>
+</footer>
 
 </body>
 </html>
