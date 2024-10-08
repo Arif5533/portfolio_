@@ -1,16 +1,46 @@
+/* General Styles */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f4f4f4; /* Light background color */
 }
 
 .container {
-    max-width: 800px; /* Max width for the container */
+    max-width: 1200px; /* Max width for the container */
     margin: auto; /* Center the container */
     padding: 20px;
 }
 
+/* Header Styles */
+header {
+    background: linear-gradient(135deg, #6e7dff, #b4b9ff);
+    color: white;
+    text-align: center;
+    padding: 100px 20px; /* Top and bottom padding */
+}
+
+header h1 {
+    font-size: 2.5em;
+}
+
+header p {
+    font-size: 1.2em;
+}
+
+.btn {
+    background-color: #ff6b6b;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background-color: #ff4c4c; /* Darker shade on hover */
+}
+
+/* Section Styles */
 .about-me {
     text-align: center; /* Center text */
 }
@@ -20,19 +50,14 @@ body {
     height: 150px; /* Set height to match width for circular shape */
     border-radius: 50%; /* Circular image */
     object-fit: cover; /* Ensures the image covers the area without distortion */
-    transition: transform 0.3s ease; /* Smooth scaling effect */
 }
 
-.profile-img:hover {
-    transform: scale(1.1); /* Zoom effect on hover */
-}
-
-h1, h2 {
+.about-me h2,
+.education h2,
+.news h2,
+.projects h2,
+.contact h2 {
     color: #333; /* Darker color for headings */
-}
-
-hr {
-    margin: 20px 0; /* Spacing for horizontal rules */
 }
 
 ul {
@@ -45,14 +70,26 @@ ul {
     padding: 15px;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Subtle shadow */
-    transition: transform 0.3s ease; /* Smooth scaling effect */
 }
 
-.project:hover {
-    transform: translateY(-5px); /* Lift effect on hover */
-}
-
+/* Footer Styles */
 footer {
     text-align: center;
     margin-top: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+   header h1 {
+       font-size: 2em;
+   }
+
+   header p {
+       font-size: 1em;
+   }
+
+   .profile-img {
+       width: 120px; /* Smaller image size on mobile */
+       height: 120px;
+   }
 }
