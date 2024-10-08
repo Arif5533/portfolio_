@@ -17,8 +17,9 @@ body {
 
 .profile-img {
     width: 150px; /* Adjust image size */
-    height: auto; /* Maintain aspect ratio */
+    height: 150px; /* Set height to match width for circular shape */
     border-radius: 50%; /* Circular image */
+    object-fit: cover; /* Ensures the image covers the area without distortion */
 }
 
 h1, h2 {
